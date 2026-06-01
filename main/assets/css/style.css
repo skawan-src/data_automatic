@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sriracha&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Open Sans", cursive;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(55, 113, 117);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+  max-width: 650px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 40px auto;
+}
+
+.container > h1 {
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 464px) {
+  .container {
+    width: 95%;
+    padding: 5px 15px;
+    height: 150px;
+  }
+  .container > h1 {
+    font-size: 1rem;
+  }
+}   
+
+@media only screen and (min-width: 464px) and (max-width: 720px) {
+  .container {
+    width: 95%;
+    padding: 5px 15px;
+  }
+  .container > h1 {
+    font-size: 1.3rem;
+  }
+}
